@@ -1,0 +1,12 @@
+hubot:
+  build: .
+  environment:
+    REDIS_URL: redis://redis/hubot
+  links:
+    - redis
+redis:
+  image: "nhoag/redis"
+  volumes:
+    - ./redis:/data
+  ports:
+    - "6379:6379"
