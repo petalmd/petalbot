@@ -1,1 +1,4 @@
 redis
+node_modules
+npm-debug.log
+.hubot_history
